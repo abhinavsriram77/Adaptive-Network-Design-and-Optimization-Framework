@@ -100,3 +100,4 @@ Every request entering our framework passes through the **6-Stage DAA Decision P
 | **Fibonacci Heap** | 4 pointers per node cause poor CPU cache locality and high constant overhead. | **Pairing Heaps** & **Strict Brodal/Rank-Pairing Heaps** |
 | **0/1 Knapsack DP (`O(N*W)`)** | Memory explodes when budget `W` is in billions of dollars with cent precision. | **FPTAS (Fully Polynomial-Time Approximation Scheme)** via value scaling |
 | **Exact TSP B&B / Backtracking** | Exponential state explosion for `N > 25` cities. | **Christofides' 1.5-Approximation Algorithm** & **Lin-Kernighan-Helsgaun (LKH)** |
+
