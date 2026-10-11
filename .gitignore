@@ -23,3 +23,5 @@ env/
 .vscode/
 .idea/
 
+# Local reports and documentation
+docs/
