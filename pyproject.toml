@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-optimizer"
+version = "0.1.0"
+description = "Adaptive Network Design and Optimization Framework dynamically selecting DAA algorithms based on graph density and workload metrics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Senior Systems & Algorithms Engineer"}
+]
+keywords = [
+    "network-optimization",
+    "daa",
+    "graph-algorithms",
+    "mst",
+    "prims-algorithm",
+    "kruskals-algorithm",
+    "floyd-warshall"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-v --strict-markers"
+
